@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+        <title>Hogwarts Quiz</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo__container">
+                    <a class="logo-a" href="index.html"><img src="./assets/imgs/Hogwarts-Logo.png" alt="" class="logo" /></a>
+                    <a class="logo__link" href="index.html">Inicio</a>
+                </div>
+            </header>
+            <div id="main" class="main">
+                <div class="main__container">
+                    <h1 id="main__title">Bienvenido a Hogwarts</h1>
+                    <div class="name">
+                        <input type="text" id="userName" placeholder="Ingresá tu nombre" />
+                        <button id="greetingsButton"><i class="fas fa-share"></i></button>
+                    </div>
+                    <img src="./assets/imgs/Sorting_Hat.png" alt="sorter-hat" class="hat" />
+                    <div id="greetings" class="greetings">
+                        <h5 id="saludo"></h5>
+                    </div>
+                </div>
+            </div>
+            <div id="quiz" class="quiz">
+                <div class="block">
+                    <div id="blockOne" class="block__one">
+                        <img src="./assets/imgs/Sorting_Hat.png" alt="sorting-hat" class="mini-hat" />
+                        <p>Si pudieras inventar una poción, cual inventarías?</p>
+                        <input type="checkbox" id="gryffindorOne" class="checkbox" />
+                        <div id="gryffindorBtnOne" class="casas__checkbox">Amor</div>
+                        <input type="checkbox" id="hufflepuffOne" class="checkbox" />
+                        <div id="hufflepuffBtnOne" class="casas__checkbox">Gloria</div>
+                        <input type="checkbox" id="ravenclawOne" class="checkbox" />
+                        <div id="ravenclawBtnOne" class="casas__checkbox">Sabiduría</div>
+                        <input type="checkbox" id="slytherinOne" class="checkbox" />
+                        <div id="slytherinBtnOne" class="casas__checkbox">Poder</div>
+                        <div class="btns">
+                            <button id="btnBackOne" class="btn">Volver</button>
+                            <button id="btnNextOne" class="btn">Siguiente</button>
+                        </div>
+                    </div>
+                    <div id="blockTwo" class="block__two">
+                        <img src="./assets/imgs/Sorting_Hat.png" alt="sorting-hat" class="mini-hat" />
+                        <p>Que preferirías?</p>
+                        <input type="checkbox" id="hufflepuffTwo" class="checkbox" />
+                        <div id="hufflepuffBtnTwo" class="casas__checkbox">Ser envidiado</div>
+                        <input type="checkbox" id="ravenclawTwo" class="checkbox" />
+                        <div id="ravenclawBtnTwo" class="casas__checkbox">Ser imitado</div>
+                        <input type="checkbox" id="gryffindorTwo" class="checkbox" />
+                        <div id="gryffindorBtnTwo" class="casas__checkbox">Ser admirado</div>
+                        <input type="checkbox" id="slytherinTwo" class="checkbox" />
+                        <div id="slytherinBtnTwo" class="casas__checkbox">Ser temido</div>
+                        <div class="btns">
+                            <button id="btnBackTwo" class="btn">Volver</button>
+                            <button id="btnNextTwo" class="btn">Siguiente</button>
+                        </div>
+                    </div>
+                    <div id="blockThree" class="block__three">
+                        <img src="./assets/imgs/Sorting_Hat.png" alt="sorting-hat" class="mini-hat" />
+                        <p>Cual de estas criaturas magicas te gusta mas?</p>
+                        <input type="checkbox" id="ravenclawThree" class="checkbox" />
+                        <div id="ravenclawBtnThree" class="casas__checkbox">Centauros</div>
+                        <input type="checkbox" id="gryffindorThree" class="checkbox" />
+                        <div id="gryffindorBtnThree" class="casas__checkbox">Trolls</div>
+                        <input type="checkbox" id="slytherinThree" class="checkbox" />
+                        <div id="slytherinBtnThree" class="casas__checkbox">Hombres lobo</div>
+                        <input type="checkbox" id="hufflepuffThree" class="checkbox" />
+                        <div id="hufflepuffBtnThree" class="casas__checkbox">Fantasmas</div>
+                        <div class="btns">
+                            <button id="btnBackThree" class="btn">Volver</button>
+                            <button id="btnNextThree" class="btn">Siguiente</button>
+                        </div>
+                    </div>
+                    <div id="blockFour" class="block__four">
+                        <img src="./assets/imgs/Sorting_Hat.png" alt="sorting-hat" class="mini-hat" />
+                        <p>Blanco o Negro?</p>
+                        <input type="checkbox" id="gryffindorRavenclaw" class="checkbox" />
+                        <div id="btnGryffindorRavenclaw" class="casas__checkbox">Blanco</div>
+                        <input type="checkbox" id="slytherinHufflepuff" class="checkbox" />
+                        <div id="btnSlytherinHufflepuff" class="casas__checkbox">Negro</div>
+                        <div class="btns">
+                            <button id="btnBackFour" class="btn">Volver</button>
+                            <button id="btnNextFour" class="btn">Siguiente</button>
+                        </div>
+                    </div>
+                    <div id="blockFive" class="block__five">
+                        <img src="./assets/imgs/Sorting_Hat.png" alt="sorting-hat" class="mini-hat" />
+                        <p>Cual de estas opciones te identifica?</p>
+                        <input type="checkbox" id="gryffindorFour" class="checkbox" />
+                        <div id="gryffindorBtnFour" class="casas__checkbox">Valor</div>
+                        <input type="checkbox" id="hufflepuffFour" class="checkbox" />
+                        <div id="hufflepuffBtnFour" class="casas__checkbox">Lealtad</div>
+                        <input type="checkbox" id="ravenclawFour" class="checkbox" />
+                        <div id="ravenclawBtnFour" class="casas__checkbox">Creatividad</div>
+                        <input type="checkbox" id="slytherinFour" class="checkbox" />
+                        <div id="slytherinBtnFour" class="casas__checkbox">Ambición</div>
+                        <div class="btns">
+                            <button id="btnBackFive" class="btn">Volver</button>
+                            <button id="btnNextFive" class="btn">Siguiente</button>
+                        </div>
+                    </div>
+                    <div id="blockSix" class="block__six">
+                        <img src="./assets/imgs/Sorting_Hat.png" alt="sorting-hat" class="mini-hat" />
+                        <p>mmmmm......interesante!</p>
+                        <div class="btns">
+                            <button id="btnBackSix" class="btn">Volver</button>
+                            <button id="btnCalculate" class="btn">Finalizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="casas" class="casas">
+                <div id="blockGryffindor" class="gryffindor__div">
+                    <div class="container">
+                        <div id="casasContent" class="main_content">
+                            <h2>Has sido seleccionado en...</h2>
+                            <div class="description">
+                                <div class="description_img">
+                                    <img src="/assets/imgs/gryffindor2.png" alt="" />
+                                </div>
+                                <div class="info">
+                                    <h3>Caracteristicas</h3>
+                                    <p>
+                                        coraje y valentía. Un buen miembro de Gryffindor tiene gran osadía, temple y caballerosidad. Son capaces de todo por
+                                        defender en lo que creen y nunca se dan por vencidos. También son capaces de romper las reglas si es necesario y les
+                                        encantan los retos, cuanto más difíciles, mejor. Se atreven a lo que la mayoría no se atreve. En cada obstáculo ven una
+                                        oportunidad para demostrar quienes son realmente.
+                                    </p>
+                                    <div class="history_casas">
+                                        <h3>Historia</h3>
+                                        <p>
+                                            Godric Gryffindor: El fundador de la casa de Gryffindor. Un hombre justo, que creía que cualquier niño que mostrara
+                                            habilidades mágicas antes de los 11 años debía ser capaz de asistir a Hogwarts. Él elegía como miembros de su casa a
+                                            aquellos que demostraban valor, coraje y valentía. Corresponde al elemento de fuego.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Magos de la casa</h3>
+                    </div>
+                    <div id="gryffindor__imgs" class="casas_imgs"></div>
+                </div>
+                <div id="blockSlytherin" class="slytherin__div">
+                    <div class="container">
+                        <div id="casasContent" class="main_content">
+                            <h2>Has sido seleccionado en...</h2>
+                            <div class="description">
+                                <div class="description_img">
+                                    <img src="/assets/imgs/slytherin.png" alt="" />
+                                </div>
+                                <div class="info">
+                                    <h3>Caracteristicas</h3>
+                                    <p>
+                                        Los Slytherins tienden a ser ambiciosos, inteligentes, astutos, líderes fuertes, y orientados hacia los logros. También
+                                        tienen muy desarrollado el instinto de supervivencia. Esto significa que los Slytherins tienden a dudar antes de actuar,
+                                        con el fin de sopesar todos los posibles resultados antes de decidir exactamente lo que se debe hacerse. De acuerdo con
+                                        Albus Dumbledore, las cualidades que Salazar valoraba en los estudiantes que eligió incluían la inteligencia, el
+                                        ingenio, la determinación, y "un cierto desprecio por las reglas".
+                                    </p>
+                                    <div class="history_casas">
+                                        <h3>Historia</h3>
+                                        <p>
+                                            Slytherin es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts en el universo de
+                                            ficción de los libros y películas de la saga Harry Potter. Cada una de estas casas corresponde a uno de los
+                                            fundadores de Hogwarts, en este caso a Salazar Slytherin. Los estudiantes de Slytherin tienen una gran reputación en
+                                            el mundo mágico debido a sus éxitos,1​ aunque no tan buena en la propia escuela por su gran rivalidad y tremenda
+                                            competitividad;2​ sin embargo, consideran un honor haber sido admitidos en dicha casa, por su larga historia y
+                                            tradiciones, además de ser aquella que acogió al mago Merlín entre otros grandes conocidos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Magos de la casa</h3>
+                    </div>
+                    <div id="slytherin__imgs" class="casas_imgs"></div>
+                </div>
+                <div id="blockHufflepuff" class="hufflepuff__div">
+                    <div class="container">
+                        <div id="casasContent" class="main_content">
+                            <h2>Has sido seleccionado en...</h2>
+                            <div class="description">
+                                <div class="description_img">
+                                    <img src="/assets/imgs/hufflepuff.png" alt="" />
+                                </div>
+                                <div class="info">
+                                    <h3>Caracteristicas</h3>
+                                    <p>
+                                        Los estudiantes de esta casa son conocidos por ser trabajadores, amigables, leales, humildes y sin prejuicios. Debido a
+                                        sus valores, los Hufflepuffs no son tan competitivos como las otras casas, o son más modestos con respecto a sus logros.
+                                    </p>
+                                    <div class="history_casas">
+                                        <h3>Historia</h3>
+                                        <p>
+                                            Su fundadora es la bruja medieval Helga Hufflepuff. La jefa de la casa es Pomona Sprout. El fraile gordo es el
+                                            fantasma de la casa. Hufflepuff es la más inclusiva de las cuatro casas; el trabajo duro, la paciencia, la amistad y
+                                            la honestidad son sumamente necesarias para ser miembros. Su animal emblemático es el tejón y sus colores son el
+                                            amarillo y negro. Hufflepuff responde en gran medida a los elementos de la tierra.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Magos de la casa</h3>
+                    </div>
+                    <div id="hufflepuff__imgs" class="casas_imgs"></div>
+                </div>
+                <div id="blockRavenclaw" class="ravenclaw__div">
+                    <div class="container">
+                        <div id="casasContent" class="main_content">
+                            <h2>Has sido seleccionado en...</h2>
+                            <div class="description">
+                                <div class="description_img">
+                                    <img src="/assets/imgs/revenclaw.png" alt="" />
+                                </div>
+                                <div class="info">
+                                    <h3>Caracteristicas</h3>
+                                    <p>
+                                        Sabiduría, ingenio e inteligencia son parte de tales características, por lo que no es de extrañar que los estudiantes
+                                        de dicha casa tengan un nivel muy alto de talento.
+                                    </p>
+                                    <div class="history_casas">
+                                        <h3>Historia</h3>
+                                        <p>
+                                            Fundada por la bruja Rowena Ravenclaw, la cuál tuvo una hija: La dama gris, asesinada por el Barón Rojo. Dicha hija
+                                            le robo una diadema y escapó a Albania, se escondió en los bosques pero ahí fue asesinada.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Magos de la casa</h3>
+                    </div>
+                    <div id="ravenclaw__imgs" class="casas_imgs"></div>
+                </div>
+                <div id="blockMuggles" class="muggles__div">
+                    <div class="container__muggles">
+                        <h3>Sos un muggle</h3>
+                        <div class="container__muggles-img">
+                            <img class="muggle" src="/assets/imgs/muggles.webp" alt="Muggles" />
+                            <p>
+                                Se denomina muggle al ser humano que no tiene ninguna habilidad mágica; de este modo, el término designa a uno de los grupos
+                                humanos que coexisten en el universo de Harry Potter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="blockSpinner" class="spinner">
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
